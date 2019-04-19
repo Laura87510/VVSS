@@ -22,7 +22,7 @@ import java.util.Locale;
 
 import static org.junit.Assert.*;
 
-public class MainClassTest2 {
+public class MainClassTestTopDown {
     //Top Down
     private Contact contact;
     private RepositoryContact repositoryContact;
