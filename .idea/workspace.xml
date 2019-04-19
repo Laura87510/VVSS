@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c5faf60-85ed-43b1-aee5-4245d0c8bf6c" name="Default" comment="" />
+    <list default="true" id="7c5faf60-85ed-43b1-aee5-4245d0c8bf6c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/agenda/startApp/MainClassTest.java" afterPath="$PROJECT_DIR$/src/test/java/agenda/startApp/MainClassTest.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,8 +61,8 @@
           <file leaf-file-name="MainClassTestTopDown.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/agenda/startApp/MainClassTestTopDown.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="156" column="100" lean-forward="false" selection-start-line="156" selection-start-column="100" selection-end-line="156" selection-end-column="100" />
+                <state relative-caret-position="219">
+                  <caret line="154" column="40" lean-forward="true" selection-start-line="154" selection-start-column="40" selection-end-line="154" selection-end-column="40" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -71,7 +73,7 @@
           <file leaf-file-name="IntegrationTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/test/IntegrationTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-58">
+                <state relative-caret-position="5700">
                   <caret line="261" column="71" lean-forward="false" selection-start-line="261" selection-start-column="71" selection-end-line="261" selection-end-column="71" />
                   <folding />
                 </state>
@@ -142,8 +144,8 @@
           <file leaf-file-name="MainClassTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/agenda/startApp/MainClassTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="251">
-                  <caret line="112" column="100" lean-forward="false" selection-start-line="112" selection-start-column="100" selection-end-line="112" selection-end-column="100" />
+                <state relative-caret-position="3394">
+                  <caret line="214" column="0" lean-forward="false" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -213,9 +215,9 @@
         <option value="$PROJECT_DIR$/src/test/java/agenda/startApp/MainClassTest2.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/IntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/agenda/service/ContactServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/agenda/startApp/MainClassTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/agenda/model/repository/classes/RepositoryContactFileTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/agenda/startApp/MainClassTestTopDown.java" />
+        <option value="$PROJECT_DIR$/src/test/java/agenda/startApp/MainClassTest.java" />
       </list>
     </option>
   </component>
@@ -745,7 +747,7 @@
       <workItem from="1554327072222" duration="2279000" />
       <workItem from="1554815133443" duration="1469000" />
       <workItem from="1554922000497" duration="636000" />
-      <workItem from="1555615297854" duration="12172000" />
+      <workItem from="1555615297854" duration="12262000" />
     </task>
     <servers />
   </component>
@@ -782,7 +784,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48203000" />
+    <option name="totallyTimeSpent" value="48293000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1239,14 +1241,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/IntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="261" column="71" lean-forward="false" selection-start-line="261" selection-start-column="71" selection-end-line="261" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-953">
@@ -1265,16 +1259,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/startApp/MainClassTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="112" column="100" lean-forward="false" selection-start-line="112" selection-start-column="100" selection-end-line="112" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/agenda/model/repository/classes/RepositoryContactFileTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-753">
@@ -1285,10 +1269,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/IntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5700">
+          <caret line="261" column="71" lean-forward="false" selection-start-line="261" selection-start-column="71" selection-end-line="261" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/startApp/MainClassTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3394">
+          <caret line="214" column="0" lean-forward="false" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/agenda/startApp/MainClassTestTopDown.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="156" column="100" lean-forward="false" selection-start-line="156" selection-start-column="100" selection-end-line="156" selection-end-column="100" />
+        <state relative-caret-position="219">
+          <caret line="154" column="40" lean-forward="true" selection-start-line="154" selection-start-column="40" selection-end-line="154" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

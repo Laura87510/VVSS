@@ -129,4 +129,88 @@ public class MainClassTest {
             assertTrue(false);
         }
     }
+
+    //Top Down
+    @Test
+    public void testIntegrarePA() {
+        try {
+            DateFormat format = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
+            String string1 = "18/04/2019";
+            String string2 = "19/04/2019";
+            Date date1 = format.parse(string1), date2 = format.parse(string2);
+            assertTrue(repositoryContact.count() == 0);
+            service.addContact("name", "adress", "+1234567890");
+            assertTrue(repositoryContact.count() == 1);
+            contact = new Contact("Ionescu", "adr", "+8729829238");
+            repositoryContact.addContact(contact.getName(),contact.getAddress(),contact.getTelefon());
+            for (Contact c : repositoryContact.getContacts()) {
+                if (c.equals(contact)) {
+                    assertTrue(true);
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            assertTrue(false);
+        }
+    }
+
+    @Test
+    public void testIntegrarePAB() {
+        try {
+            DateFormat format = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
+            String string1 = "18/04/2019";
+            String string2 = "19/04/2019";
+            Date date1 = format.parse(string1), date2 = format.parse(string2);
+            assertTrue(repositoryContact.count() == 0);
+            service.addContact("name", "adress", "+1234567890");
+            assertTrue(repositoryContact.count() == 1);
+            contact = new Contact("Ionescu", "adr", "+8729829238");
+            repositoryContact.addContact(contact.getName(),contact.getAddress(), contact.getTelefon());
+            for (Contact c : repositoryContact.getContacts()) {
+                if (c.equals(contact)) {
+                    assertTrue(true);
+                    break;
+                }
+            }
+            service.addActivity(new Activity("activity", date1,date2,repositoryContact.getContacts(),"desc"));
+            assertTrue(repositoryActivity.count() == 3);
+            repositoryActivity.addActivity(new Activity("a", date1,date2,null, "description"));
+            assertTrue(repositoryActivity.count() == 3);
+        } catch (Exception e) {
+            assertTrue(false);
+        }
+    }
+
+    @Test
+    public void testIntegrarePABC() {
+        try {
+            DateFormat format = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
+            String string1 = "18/04/2019";
+            String string2 = "19/04/2019";
+            Date date1 = format.parse(string1), date2 = format.parse(string2);
+            assertTrue(repositoryContact.count() == 0);
+            service.addContact("name", "adress", "+1234567890");
+            assertTrue(repositoryContact.count() == 1);
+            contact = new Contact("Ionescu", "adr", "+8729829238");
+            repositoryContact.addContact(contact.getName(),contact.getAddress(),contact.getTelefon());
+            for (Contact c : repositoryContact.getContacts()) {
+                if (c.equals(contact)) {
+                    assertTrue(true);
+                    break;
+                }
+            }
+            service.addActivity(new Activity("activity", date1,date2,repositoryContact.getContacts(),"desc"));
+            assertTrue(repositoryActivity.count() == 3);
+            repositoryActivity.addActivity(new Activity("a", date1,date2,null, "description"));
+            assertTrue(repositoryActivity.count() == 3);
+
+            List<Activity> list1 = service.getAllByDate("a", date1);
+            assertTrue(list1.size() == 0);
+            List<Activity> list2 = service.getAllByDate("activity", date1);
+            assertTrue(list2.size() == 1);
+        } catch (Exception e) {
+            assertTrue(false);
+        }
+    }
+
 }
